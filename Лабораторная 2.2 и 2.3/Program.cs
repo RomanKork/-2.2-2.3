@@ -75,7 +75,7 @@ internal class program
     {
         Console.WriteLine("Вам надо ввести минуты(0 - 59): ");
         byte y;
-        if (byte.TryParse(Console.ReadLine(), out y) && y < 59)
+        if (byte.TryParse(Console.ReadLine(), out y) && y < 60)
             return y;
         Console.WriteLine("Вы ввели некорректное значение, попробуйте снова");
         return Enterminutes();
